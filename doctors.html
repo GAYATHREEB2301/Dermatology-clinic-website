@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - Lumina Skin Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            Lumina Skin Clinic
+        </div>
+
+        <div class="nav-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About Clinic</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html" class="active">Doctors</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline auth-btn">Login</a>
+                <a href="signup.html" class="btn btn-primary auth-btn">Signup</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            &#9776;
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Title -->
+        <section style="background: var(--surface-color); text-align: center; padding: 60px 20px;">
+            <div class="container">
+                <h1>Meet Our Specialists</h1>
+                <p>World-class expertise for all your dermatological needs.</p>
+            </div>
+        </section>
+
+        <!-- Doctors Grid -->
+        <section>
+            <div class="container">
+                <div class="grid-3">
+                    <!-- Doctor 1 -->
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrapper">
+                            <div class="doctor-img">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--primary-color)" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Dr. Sarah Jenkins</h3>
+                        <span
+                            style="color: var(--primary-color); display: block; margin-bottom: 10px; font-weight: 600;">Clinical
+                            Dermatologist</span>
+                        <p style="font-size: 0.9rem;">Specializes in acne treatment, eczema management, and psoriasis
+                            care with over 15 years of experience.</p>
+                        <a href="appointment.html" class="btn btn-outline"
+                            style="margin-top: 20px; font-size: 0.85rem; padding: 8px 16px;">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 2 -->
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrapper">
+                            <div class="doctor-img">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--primary-color)" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Dr. David Chen</h3>
+                        <span
+                            style="color: var(--primary-color); display: block; margin-bottom: 10px; font-weight: 600;">Cosmetic
+                            Surgeon</span>
+                        <p style="font-size: 0.9rem;">Expert in aesthetic procedures including Botox, fillers, and
+                            advanced laser skin resurfacing techniques.</p>
+                        <a href="appointment.html" class="btn btn-outline"
+                            style="margin-top: 20px; font-size: 0.85rem; padding: 8px 16px;">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 3 -->
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrapper">
+                            <div class="doctor-img">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--primary-color)" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Dr. Emily Ross</h3>
+                        <span
+                            style="color: var(--primary-color); display: block; margin-bottom: 10px; font-weight: 600;">Pediatric
+                            Dermatologist</span>
+                        <p style="font-size: 0.9rem;">Dedicated to treating skin conditions in infants, children, and
+                            adolescents with gentle care.</p>
+                        <a href="appointment.html" class="btn btn-outline"
+                            style="margin-top: 20px; font-size: 0.85rem; padding: 8px 16px;">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        Lumina Skin Clinic
+                    </div>
+                    <p>Your partner in skin health and beauty. Visit us for a consultation today.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Patient Info</a></li>
+                        <li><a href="#">Skin Care Tips</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>123 Wellness Blvd,<br>Health City, HC 90210</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: hello@luminaskin.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Skin Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+</body>
+
+</html>

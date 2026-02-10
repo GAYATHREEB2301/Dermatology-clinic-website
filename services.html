@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Lumina Skin Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            Lumina Skin Clinic
+        </div>
+
+        <div class="nav-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About Clinic</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline auth-btn">Login</a>
+                <a href="signup.html" class="btn btn-primary auth-btn">Signup</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            &#9776;
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Title -->
+        <section style="background: var(--surface-color); text-align: center; padding: 60px 20px;">
+            <div class="container">
+                <h1>Our Dermatology Services</h1>
+                <p>Comprehensive care tailored to your unique skin needs.</p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section>
+            <div class="container">
+                <div class="grid-3">
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                        <h3>Clinical Dermatology</h3>
+                        <p>Expert diagnosis and treatment for all skin, hair, and nail disorders, including acne,
+                            eczema, and rashes.</p>
+                        <a href="treatments.html"
+                            style="color: var(--primary-color); font-weight: 600; margin-top: 10px; display: inline-block;">View
+                            Treatments →</a>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                        <h3>Aesthetic Dermatology</h3>
+                        <p>Cosmetic procedures to enhance your appearance, reduce aging signs, and improve skin texture.
+                        </p>
+                        <a href="treatments.html"
+                            style="color: var(--primary-color); font-weight: 600; margin-top: 10px; display: inline-block;">View
+                            Treatments →</a>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <h3>Dermatosurgery</h3>
+                        <p>Minimally invasive surgical procedures for mole removal, scar revision, and skin tag
+                            excision.</p>
+                        <a href="treatments.html"
+                            style="color: var(--primary-color); font-weight: 600; margin-top: 10px; display: inline-block;">View
+                            Treatments →</a>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.2 7.8l-7.7 7.7-4-4-5.7 5.7"></path>
+                            <path d="M15 7h6v6"></path>
+                        </svg>
+                        <h3>Laser Treatments</h3>
+                        <p>State-of-the-art laser technology for hair removal, skin resurfacing, and pigmentation
+                            correction.</p>
+                        <a href="treatments.html"
+                            style="color: var(--primary-color); font-weight: 600; margin-top: 10px; display: inline-block;">View
+                            Treatments →</a>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.74 5.74-5.74 5.74-5.74-5.74L12 2.69M12 2L2 12l10 10 10-10L12 2z" />
+                        </svg>
+                        <h3>Pediatric Dermatology</h3>
+                        <p>Specialized care for children's skin conditions, treating everything from birthmarks to
+                            rashes.</p>
+                        <a href="treatments.html"
+                            style="color: var(--primary-color); font-weight: 600; margin-top: 10px; display: inline-block;">View
+                            Treatments →</a>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <h3>Skin Cancer Screening</h3>
+                        <p>Early detection and treatment of skin cancer through regular full-body skin examinations/.
+                        </p>
+                        <a href="treatments.html"
+                            style="color: var(--primary-color); font-weight: 600; margin-top: 10px; display: inline-block;">View
+                            Treatments →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skin Treatments -->
+        <section style="background-color: var(--card-bg);">
+            <div class="container">
+                <h2 style="text-align: center;">Skin Treatments</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Acne Scar Treatment</h3>
+                        <p>Reduce the appearance of acne scars with chemical peels, laser resurfacing, and
+                            microneedling.</p>
+                        <a href="appointment.html" class="btn btn-outline"
+                            style="margin-top: 15px; font-size: 0.9rem; padding: 8px 20px;">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <h3>Anti-Aging Therapy</h3>
+                        <p>Combat fine lines and wrinkles with Botox, dermal fillers, and radiofrequency tightening.</p>
+                        <a href="appointment.html" class="btn btn-outline"
+                            style="margin-top: 15px; font-size: 0.9rem; padding: 8px 20px;">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <h3>Pigmentation Correction</h3>
+                        <p>Even out skin tone and reduce sun spots with advanced laser therapy and topical treatments.
+                        </p>
+                        <a href="appointment.html" class="btn btn-outline"
+                            style="margin-top: 15px; font-size: 0.9rem; padding: 8px 20px;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hair Treatments -->
+        <section>
+            <div class="container">
+                <h2 style="text-align: center;">Hair Treatments</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>PRP Therapy</h3>
+                        <p>Platelet-Rich Plasma therapy to stimulate hair follicles and promote natural hair growth.</p>
+                        <a href="appointment.html" class="btn btn-outline"
+                            style="margin-top: 15px; font-size: 0.9rem; padding: 8px 20px;">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <h3>Hair Transplant</h3>
+                        <p>Permanent solution for hair loss using the latest FUE (Follicular Unit Extraction)
+                            techniques.</p>
+                        <a href="appointment.html" class="btn btn-outline"
+                            style="margin-top: 15px; font-size: 0.9rem; padding: 8px 20px;">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <h3>Laser Hair Removal</h3>
+                        <p>Safe and long-lasting hair reduction for all skin types using advanced diode lasers.</p>
+                        <a href="appointment.html" class="btn btn-outline"
+                            style="margin-top: 15px; font-size: 0.9rem; padding: 8px 20px;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        Lumina Skin Clinic
+                    </div>
+                    <p>Your partner in skin health and beauty. Visit us for a consultation today.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Patient Info</a></li>
+                        <li><a href="#">Skin Care Tips</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>123 Wellness Blvd,<br>Health City, HC 90210</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: hello@luminaskin.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Skin Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+</body>
+
+</html>
