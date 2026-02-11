@@ -147,9 +147,10 @@ header {
     border-bottom: 1px solid var(--glass-border);
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 5%;
+    gap: 60px;
     transition: all 0.3s ease;
 }
 
@@ -583,6 +584,8 @@ footer {
 @media (max-width: 868px) {
     header {
         padding: 0 20px;
+        justify-content: space-between;
+        gap: 0;
     }
 
     .menu-toggle {
